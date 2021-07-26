@@ -51,14 +51,16 @@
     <!--Main content-->
     <main>
       <!-- Section menu -->
-      <section id="menu">
+      <section id="search_lodging">
         <h1>Trouvez votre hébergement pour des vacances de rêve.</h1>
         <p>En plein centre ville ou en pleine nature.</p>
         <div class="searchbar">
           <div class="pinhead"><i class="fas fa-map-marker-alt fa-lg"></i></div>
           <input type="text" placeholder="Ville" value="Marseille, France" />
-          <button class="hidelg">Rechercher</button>
-          <button class="hidesm"><i class="fas fa-search"></i></button>
+          <button class="hidelg">
+            <span class="hide-lg">Rechercher</span
+            ><span class="hide-sm"><i class="fas fa-search"></i></span>
+          </button>
         </div>
         <div class="filters">
           <h2>Filtres:</h2>
@@ -90,7 +92,7 @@
       <!-- section lodging and popular -->
       <section id="lod-pop">
         <!-- lodging part -->
-        <div class="lodging grey-bg">
+        <article class="lodging grey-bg">
           <h2>Hébergements à Marseille</h2>
           <div class="lodging-flexbox">
             <div>
@@ -98,7 +100,7 @@
                 <div>
                   <div class="lodging-img">
                     <img
-                      src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                      src="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                       alt="Photo Auberge la Cannebière"
                     />
                   </div>
@@ -120,7 +122,7 @@
                 <div>
                   <div class="lodging-img">
                     <img
-                      src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                      src="assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                       alt="Photo Hôtel du port"
                     />
                   </div>
@@ -142,7 +144,7 @@
                 <div>
                   <div class="lodging-img">
                     <img
-                      src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                      src="assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                       alt="Photo Hôtel les mouettes"
                     />
                   </div>
@@ -164,7 +166,7 @@
                 <div>
                   <div class="lodging-img">
                     <img
-                      src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                      src="assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                       alt="Photo Hôtel de la mer"
                     />
                   </div>
@@ -187,7 +189,7 @@
                 <div>
                   <div class="lodging-img">
                     <img
-                      src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                      src="assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                       alt="Photo Auberge Le Panier"
                     />
                   </div>
@@ -209,7 +211,7 @@
                 <div>
                   <div class="lodging-img">
                     <img
-                      src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                      src="assets/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                       alt="Photo Hôtel chez Amina"
                     />
                   </div>
@@ -227,10 +229,10 @@
             </div>
           </div>
           <p class="show_more">Afficher plus...</p>
-        </div>
+        </article>
 
         <!-- popular part -->
-        <div class="popular grey-bg">
+        <article class="popular grey-bg">
           <div class="pop-title">
             <h2>Les plus populaires</h2>
             <i class="fas fa-chart-line fa-2x"></i>
@@ -290,7 +292,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
       <!-- section activities -->

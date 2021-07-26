@@ -21,6 +21,14 @@ ul {
   list-style: none;
 }
 
+/* Variables */
+:root {
+  --primary-color: #0065FC;
+  --secondary-color: #DEEBFF;
+  --tertiary-color: #F2F2F2;
+}
+
+
 /* Header */
 header {
   display: flex;
@@ -68,16 +76,16 @@ nav {
 }
 
 a.registerlink {
-  color: #0065fc;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
 a.navlink:hover {
-  color: #0065fc;
+  color: var(--primary-color);
 }
 
 .hovernavdesktop:hover {
-  box-shadow: 0 -37px white, 0 -45px #0065fc;
+  box-shadow: 0 -37px white, 0 -45px var(--primary-color);
 }
 
 @media screen and (max-width: 576px) {
@@ -109,7 +117,7 @@ a.navlink:hover {
 
   .navbar li {
     font-size: 16px;
-    box-shadow: 0 10px white, 0 13px #f2f2f2;
+    box-shadow: 0 10px white, 0 13px var(--tertiary-color);
   }
 
   .register li:hover {
@@ -117,18 +125,18 @@ a.navlink:hover {
   }
 
   .navbar li:hover {
-    box-shadow: 0 10px white, 0 13px #0065fc;
+    box-shadow: 0 10px white, 0 13px var(--primary-color);
   }
 }
 
 /* Main content */
 /* Section Menu */
-#menu {
+#search_lodging {
   margin: 0 4%;
 }
 
-#menu h1,
-#menu p {
+#search_lodging h1,
+#search_lodging p {
   margin: 10px 0;
 }
 /* div searchbar */
@@ -141,7 +149,7 @@ a.navlink:hover {
 .pinhead {
   height: 50px;
   width: 50px;
-  background-color: #f2f2f2;
+  background-color: var(--tertiary-color);
   border-radius: 15px 0 0 15px;
 }
 
@@ -157,8 +165,8 @@ a.navlink:hover {
 .searchbar input {
   border-right: none;
   border-left: none;
-  border-top: 2px solid #f2f2f2;
-  border-bottom: 2px solid #f2f2f2;
+  border-top: 2px solid var(--tertiary-color);
+  border-bottom: 2px solid var(--tertiary-color);
   padding-left: 20px;
   font-size: 18px;
   font-weight: 600;
@@ -172,22 +180,22 @@ a.navlink:hover {
   width: 130px;
   font-size: large;
   color: white;
-  background-color: #0065fc;
+  background-color: var(--primary-color);
   border: none;
   border-radius: 0 15px 15px 0;
   cursor: pointer;
 }
 
 .searchbar button:hover {
-  border: 2px solid #f2f2f2;
+  border: 2px solid var(--tertiary-color);
 }
 
 .searchbar button:active {
-  background: #deebff;
-  color: #0065fc;
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
-.searchbar button.hidesm {
+.searchbar button .hide-sm {
   display: none;
 }
 
@@ -204,11 +212,11 @@ a.navlink:hover {
     width: 50px;
   }
 
-  .searchbar button.hidesm {
+  .searchbar button .hide-sm {
     display: unset;
   }
 
-  .searchbar button.hidelg {
+  .searchbar button .hide-lg {
     display: none;
   }
 }
@@ -240,7 +248,7 @@ a.navlink:hover {
 
 .filters > ul > li:hover {
   transition: transform 0.3s, background-color 0.3s;
-  background-color: #deebff;
+  background-color: var(--secondary-color);
   transform: scale(1.1);
   border: 2px solid transparent;
   border-left: none;
@@ -250,7 +258,7 @@ a.navlink:hover {
   min-width: 50px;
   width: 50px;
   height: 100%;
-  background-color: #deebff;
+  background-color: var(--secondary-color);
   border-radius: 25px;
   transform: scale(1.1);
 }
@@ -261,7 +269,7 @@ a.navlink:hover {
 }
 
 .filters i {
-  color: #0065fc;
+  color: var(--primary-color);
   display: block;
   text-align: center;
   margin: 16px 0;
@@ -277,9 +285,9 @@ a.navlink:hover {
   padding: 5px 10px;
   margin-right: 10px;
   text-align: center;
-  border: 2px solid #f2f2f2;
+  border: 2px solid var(--tertiary-color);
   border-radius: 25px;
-  color: #0065fc;
+  color: var(--primary-color);
 }
 
 @media all and (max-width: 768px) {
@@ -321,11 +329,11 @@ a.navlink:hover {
 }
 
 .grey-bg {
-  background-color: #f2f2f2;
+  background-color: var(--tertiary-color);
 }
 
 .note {
-  color: #0065fc;
+  color: var(--primary-color);
   font-size: 13px;
 }
 
@@ -624,7 +632,7 @@ a.navlink:hover {
 /* footer */
 footer {
   display: flex;
-  background-color: #f2f2f2;
+  background-color: var(--tertiary-color);
   padding: 35px 4%;
 }
 
