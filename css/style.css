@@ -1,11 +1,125 @@
 /* Reset some values*/
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }
 
 /* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4%;
+  height: 100px;
+}
+
+.linklogo {
+  display: block;
+  min-width: 90px;
+  width: 10%;
+}
+
+.logo {
+  max-height: 100%;
+}
+
+nav {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 66%;
+}
+
+.navbar li {
+  flex-basis: 50%;
+  padding: 0 20px;
+}
+
+.register {
+    flex-basis: 33%;
+}
+
+.register li {
+  padding: 0 20px;
+}
+
+a.registerlink {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+a.navlink:hover {
+  color: #0065fc;
+}
+
+.hovernavdesktop:hover {
+  box-shadow: 0 -37px white, 0 -45px #0065fc;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    margin: 0;
+    height: 150px;
+    display: block;
+    position: relative;
+  }
+
+  .logo {
+    margin: 20px 0 15px 20px;
+  }
+
+  nav {
+    display: unset;
+  }
+
+  .register {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+  }
+
+  .navbar {
+    justify-content: space-evenly;
+    padding-top: 20px;
+  }
+
+  .navbar li {
+    font-size: 16px;
+    box-shadow: 0 10px white, 0 13px #f2f2f2;
+  }
+
+  .register li:hover {
+    box-shadow: none;
+  }
+
+  .navbar li:hover {
+    box-shadow: 0 10px white, 0 13px #0065fc;
+  }
+}
 
 /* Main content */
 
