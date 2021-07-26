@@ -1,0 +1,12 @@
+/* Reset some values*/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+/* Main content */
+
+/* Footer */
