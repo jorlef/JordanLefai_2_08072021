@@ -23,11 +23,10 @@ ul {
 
 /* Variables */
 :root {
-  --primary-color: #0065FC;
-  --secondary-color: #DEEBFF;
-  --tertiary-color: #F2F2F2;
+  --primary-color: #0065fc;
+  --secondary-color: #deebff;
+  --tertiary-color: #f2f2f2;
 }
-
 
 /* Header */
 header {
@@ -151,10 +150,11 @@ a.navlink:hover {
   width: 50px;
   background-color: var(--tertiary-color);
   border-radius: 15px 0 0 15px;
+  order: -1;
 }
 
 .pinhead > i {
-  padding: 17px 35%;
+  padding: 15px 35%;
 }
 
 .pinhead > i:hover {
@@ -197,6 +197,20 @@ a.navlink:hover {
 
 .searchbar button .hide-sm {
   display: none;
+}
+
+.searchbar input:focus,
+.searchbar input:focus ~ div {
+  border: 3px solid var(--primary-color);
+}
+
+.searchbar input:focus {
+  border-left: none;
+  border-right: none;
+}
+
+.searchbar input:focus ~ div {
+  border-right: none;
 }
 
 @media all and (max-width: 576px) {
@@ -252,27 +266,54 @@ a.navlink:hover {
   transform: scale(1.1);
   border: 2px solid transparent;
   border-left: none;
+  overflow: hidden;
 }
 
-.filters li > div {
-  min-width: 50px;
-  width: 50px;
+.filters [type="checkbox"] {
+  display: none;
+}
+
+.filters input:checked:not(:hover) ~ label {
+  background-color: var(--secondary-color);
+  border-radius: 0 25px 25px 0;
+}
+
+.filters input:checked:hover ~ label {
+  background-color: var(--secondary-color);
+  border-radius: 0 25px 25px 0;
+}
+
+.filters input:checked:not(:hover) ~ i {
+  border-radius: 25px 0 0 25px;
+}
+
+.filters input:checked:hover ~ i {
+  border-radius: 25px 0 0 25px;
+}
+
+.filters label {
+  height: 100%;
+  padding: 14px 20px 0 10px;
+}
+
+.filters li i {
+  min-width: 45px;
+  max-width: 45px;
   height: 100%;
   background-color: var(--secondary-color);
   border-radius: 25px;
   transform: scale(1.1);
 }
 
-.filters li > span {
-  padding: 0 20px 0 10px;
+.filters li > label {
   font-weight: bold;
 }
 
-.filters i {
-  color: var(--primary-color);
+.filters i:before {
   display: block;
   text-align: center;
-  margin: 16px 0;
+  color: var(--primary-color);
+  margin: 0.7em 0;
 }
 
 .search-result {
@@ -306,7 +347,7 @@ a.navlink:hover {
   }
 
   .filters > ul > li {
-    margin: 10px 10px 0 0;
+    margin: 10px 15px 0 0;
   }
 
   .filters > ul > li:hover {
@@ -636,7 +677,7 @@ footer {
   padding: 35px 4%;
 }
 
-footer > div {
+footer > ul {
   width: 100%;
   margin-bottom: 30px;
   text-align: center;
