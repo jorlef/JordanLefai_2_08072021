@@ -25,7 +25,7 @@
   <body>
     <!--Header-->
     <header>
-      <a href="index.html" class="linklogo"
+      <a href="./" class="linklogo"
         ><img
           src="./assets/logo/Reservia.svg"
           alt="Logo du site Reservia"
@@ -67,19 +67,19 @@
           <ul>
             <li>
               <div><i class="fas fa-money-bill-wave fa-lg"></i></div>
-              <p>Économique</p>
+              <span>Économique</span>
             </li>
             <li>
               <div><i class="fas fa-child fa-lg"></i></div>
-              <p>Familial</p>
+              <span>Familial</span>
             </li>
             <li>
               <div><i class="fas fa-heart fa-lg"></i></div>
-              <p>Romantique</p>
+              <span>Romantique</span>
             </li>
             <li>
               <div><i class="fas fa-dog fa-lg"></i></div>
-              <p>Animaux autorisés</p>
+              <span>Animaux autorisés</span>
             </li>
           </ul>
         </div>
@@ -94,8 +94,8 @@
         <!-- lodging part -->
         <article class="lodging grey-bg">
           <h2>Hébergements à Marseille</h2>
-          <div class="lodging-flexbox">
-            <div>
+          <ul class="lodging-flexbox">
+            <li class="lodging_card">
               <a href="#">
                 <div>
                   <div class="lodging-img">
@@ -115,9 +115,9 @@
                   </div>
                 </div>
               </a>
-            </div>
+            </li>
 
-            <div>
+            <li class="lodging_card">
               <a href="#">
                 <div>
                   <div class="lodging-img">
@@ -137,9 +137,9 @@
                   </div>
                 </div>
               </a>
-            </div>
+            </li>
 
-            <div>
+            <li class="lodging_card">
               <a href="#">
                 <div>
                   <div class="lodging-img">
@@ -159,9 +159,9 @@
                   </div>
                 </div>
               </a>
-            </div>
+            </li>
 
-            <div>
+            <li class="lodging_card">
               <a href="#">
                 <div>
                   <div class="lodging-img">
@@ -182,9 +182,9 @@
                   </div>
                 </div>
               </a>
-            </div>
+            </li>
 
-            <div>
+            <li class="lodging_card">
               <a href="#">
                 <div>
                   <div class="lodging-img">
@@ -204,9 +204,9 @@
                   </div>
                 </div>
               </a>
-            </div>
+            </li>
 
-            <div>
+            <li class="lodging_card">
               <a href="#">
                 <div>
                   <div class="lodging-img">
@@ -226,8 +226,8 @@
                   </div>
                 </div>
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
           <p class="show_more">Afficher plus...</p>
         </article>
 
@@ -237,8 +237,8 @@
             <h2>Les plus populaires</h2>
             <i class="fas fa-chart-line fa-2x"></i>
           </div>
-          <div class="popular-flexbox">
-            <div>
+          <ul class="popular-flexbox">
+            <li class="popular_card">
               <a href="#">
                 <img
                   src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -254,9 +254,9 @@
                   </div>
                 </div>
               </a>
-            </div>
+            </li>
 
-            <div>
+            <li class="popular_card">
               <a href="#">
                 <img
                   src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
@@ -272,9 +272,9 @@
                   </div>
                 </div>
               </a>
-            </div>
+            </li>
 
-            <div>
+            <li class="popular_card">
               <a href="#">
                 <img
                   src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -290,8 +290,8 @@
                   </div>
                 </div>
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </article>
       </section>
 
@@ -299,8 +299,8 @@
       <aside id="activities">
         <h2>Activités à Marseille</h2>
         <div class="activities-grid">
-          <div class="activities-grid0">
-            <div class="activities-grid1 grid-bg">
+          <ul class="activities-subgrid">
+            <li class="activities_card grid-bg">
               <a href="#">
                 <img
                   src="assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -308,9 +308,9 @@
                 />
                 <h3>Vieux Port</h3>
               </a>
-            </div>
+            </li>
 
-            <div class="activities-grid2 grid-bg">
+            <li class="activities_card grid-bg">
               <a href="#">
                 <img
                   src="assets/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
@@ -318,9 +318,9 @@
                 />
                 <h3>Fort de Pomègues</h3>
               </a>
-            </div>
+            </li>
 
-            <div class="activities-grid3 grid-bg">
+            <li class="activities_card grid-bg">
               <a href="#">
                 <img
                   src="assets/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
@@ -328,11 +328,11 @@
                 />
                 <h3>Îles du Frioul</h3>
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
 
-          <div class="activities-grid0">
-            <div class="activities-grid1 grid-bg">
+          <ul class="activities-subgrid">
+            <li class="activities_card grid-bg">
               <a href="#">
                 <img
                   src="assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -340,9 +340,9 @@
                 />
                 <h3>Parc National des Calanques</h3>
               </a>
-            </div>
+            </li>
 
-            <div class="activities-grid2 grid-bg">
+            <li class="activities_card grid-bg">
               <a href="#">
                 <img
                   src="assets/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
@@ -350,9 +350,9 @@
                 />
                 <h3>Notre Dame-de-la-Garde</h3>
               </a>
-            </div>
+            </li>
 
-            <div class="activities-grid3 grid-bg">
+            <li class="activities_card grid-bg">
               <a href="#">
                 <img
                   src="assets/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
@@ -360,8 +360,8 @@
                 />
                 <h3>Parc Longchamp</h3>
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </aside>
     </main>
