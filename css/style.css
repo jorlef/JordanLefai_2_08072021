@@ -441,14 +441,16 @@ a.navlink:hover {
   margin: 0 0 0 10px;
 }
 
-.lodging > p.show_more {
+.lodging > button.show_more {
+  background-color: transparent;
+  border: none;
   position: absolute;
   bottom: 20px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
-.lodging > p.show_more:hover {
+.lodging > button.show_more:hover {
   text-decoration: underline;
   cursor: pointer;
 }
