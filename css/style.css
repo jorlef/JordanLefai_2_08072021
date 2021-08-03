@@ -21,13 +21,6 @@ ul {
   list-style: none;
 }
 
-/* Variables */
-:root {
-  --primary-color: #0065fc;
-  --secondary-color: #deebff;
-  --tertiary-color: #f2f2f2;
-}
-
 /* Header */
 header {
   display: flex;
@@ -75,16 +68,16 @@ nav {
 }
 
 a.registerlink {
-  color: var(--primary-color);
+  color: #0065fc;
   font-weight: bold;
 }
 
 a.navlink:hover {
-  color: var(--primary-color);
+  color: #0065fc;
 }
 
 .hovernavdesktop:hover {
-  box-shadow: 0 -37px white, 0 -45px var(--primary-color);
+  box-shadow: 0 -37px white, 0 -45px #0065fc;
 }
 
 @media screen and (max-width: 576px) {
@@ -116,7 +109,7 @@ a.navlink:hover {
 
   .navbar li {
     font-size: 16px;
-    box-shadow: 0 10px white, 0 13px var(--tertiary-color);
+    box-shadow: 0 10px white, 0 13px #f2f2f2;
   }
 
   .register li:hover {
@@ -124,7 +117,7 @@ a.navlink:hover {
   }
 
   .navbar li:hover {
-    box-shadow: 0 10px white, 0 13px var(--primary-color);
+    box-shadow: 0 10px white, 0 13px #0065fc;
   }
 }
 
@@ -148,7 +141,7 @@ a.navlink:hover {
 .pinhead {
   height: 50px;
   width: 50px;
-  background-color: var(--tertiary-color);
+  background-color: #f2f2f2;
   border-radius: 15px 0 0 15px;
   order: -1;
 }
@@ -165,8 +158,8 @@ a.navlink:hover {
 .searchbar input {
   border-right: none;
   border-left: none;
-  border-top: 2px solid var(--tertiary-color);
-  border-bottom: 2px solid var(--tertiary-color);
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
   padding-left: 20px;
   font-size: 18px;
   font-weight: 600;
@@ -180,19 +173,19 @@ a.navlink:hover {
   width: 130px;
   font-size: large;
   color: white;
-  background-color: var(--primary-color);
+  background-color: #0065fc;
   border: none;
   border-radius: 0 15px 15px 0;
   cursor: pointer;
 }
 
 .searchbar button:hover {
-  border: 2px solid var(--tertiary-color);
+  border: 2px solid #f2f2f2;
 }
 
 .searchbar button:active {
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  background: #deebff;
+  color: #0065fc;
 }
 
 .searchbar button .hide-sm {
@@ -201,7 +194,7 @@ a.navlink:hover {
 
 .searchbar input:focus,
 .searchbar input:focus ~ div {
-  border: 3px solid var(--primary-color);
+  border: 3px solid #0065fc;
 }
 
 .searchbar input:focus {
@@ -262,7 +255,7 @@ a.navlink:hover {
 
 .filters > ul > li:hover {
   transition: transform 0.3s, background-color 0.3s;
-  background-color: var(--secondary-color);
+  background-color: #deebff;
   transform: scale(1.1);
   border: 2px solid transparent;
   border-left: none;
@@ -274,12 +267,12 @@ a.navlink:hover {
 }
 
 .filters input:checked:not(:hover) ~ label {
-  background-color: var(--secondary-color);
+  background-color: #deebff;
   border-radius: 0 25px 25px 0;
 }
 
 .filters input:checked:hover ~ label {
-  background-color: var(--secondary-color);
+  background-color: #deebff;
   border-radius: 0 25px 25px 0;
 }
 
@@ -300,7 +293,7 @@ a.navlink:hover {
   min-width: 45px;
   max-width: 45px;
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: #deebff;
   border-radius: 25px;
   transform: scale(1.1);
 }
@@ -312,7 +305,7 @@ a.navlink:hover {
 .filters i:before {
   display: block;
   text-align: center;
-  color: var(--primary-color);
+  color: #0065fc;
   margin: 0.7em 0;
 }
 
@@ -326,9 +319,9 @@ a.navlink:hover {
   padding: 5px 10px;
   margin-right: 10px;
   text-align: center;
-  border: 2px solid var(--tertiary-color);
+  border: 2px solid #f2f2f2;
   border-radius: 25px;
-  color: var(--primary-color);
+  color: #0065fc;
 }
 
 @media all and (max-width: 768px) {
@@ -370,11 +363,11 @@ a.navlink:hover {
 }
 
 .grey-bg {
-  background-color: var(--tertiary-color);
+  background-color: #f2f2f2;
 }
 
 .note {
-  color: var(--primary-color);
+  color: #0065fc;
   font-size: 13px;
 }
 
@@ -674,7 +667,7 @@ a.navlink:hover {
 /* footer */
 footer {
   display: flex;
-  background-color: var(--tertiary-color);
+  background-color: #f2f2f2;
   padding: 35px 4%;
 }
 
