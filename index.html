@@ -4,20 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--import font-awesome-->
+    <!-- meta tag for SEO -->
+    <meta
+      name="description"
+      content="Reservia vous permet de réserver des hébergements pour vos vacances dans la ville de votre choix"
+    />
+    <!-- import font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <!--import fonts-->
+    <!-- preconnect google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- import fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- import css -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- import favicon -->
     <link rel="icon" href="./assets/logo/Reservia_icon.png" />
+    <!-- title -->
     <title>
       Reservia - Trouvez votre hébergement pour des vacances de rêves.
     </title>
@@ -25,24 +34,24 @@
   <body>
     <!--Header-->
     <header>
-      <a href="./" class="linklogo"
+      <a href="./" class="logo_link"
         ><img
           src="./assets/logo/Reservia.svg"
           alt="Logo du site Reservia"
-          class="logo"
+          class="logo_img"
       /></a>
-      <nav>
-        <ul class="register">
-          <li class="hovernavdesktop">
-            <a href="#" class="registerlink">S'inscrire</a>
+      <nav class="navbar">
+        <ul class="navbar_register">
+          <li class="nav_hoverDesktop">
+            <a href="#" class="nav_register">S'inscrire</a>
           </li>
         </ul>
-        <ul class="navbar">
-          <li class="hovernavdesktop">
-            <a href="#lodging" class="navlink">Hébergements</a>
+        <ul class="navbar_links">
+          <li class="nav_hoverDesktop">
+            <a href="#lodging" class="nav_link">Hébergements</a>
           </li>
-          <li class="hovernavdesktop">
-            <a href="#activities" class="navlink">Activités</a>
+          <li class="nav_hoverDesktop">
+            <a href="#activities" class="nav_link">Activités</a>
           </li>
         </ul>
       </nav>
@@ -56,42 +65,84 @@
         <p>En plein centre ville ou en pleine nature.</p>
         <form method="GET" action="index.html" id="form_search">
           <div class="searchbar">
-            <input type="text" name="ville" placeholder="Ville" value="Marseille, France" />
-            <div class="pinhead">
+            <input
+              type="text"
+              name="ville"
+              placeholder="Ville"
+              value="Marseille, France"
+              class="searchbar_input"
+            />
+            <div class="searchbar_pinhead">
               <i class="fas fa-map-marker-alt fa-lg"></i>
             </div>
-            <button type="submit" form="form_search" class="hidelg">
+            <button type="submit" form="form_search" class="searchbar_button">
               <span class="hide-lg">Rechercher</span
               ><span class="hide-sm"><i class="fas fa-search"></i></span>
             </button>
           </div>
           <div class="filters">
             <h2>Filtres:</h2>
-            <ul>
+            <ul class="filters_list">
+              <!-- Filter economic -->
               <li>
-                <input type="checkbox" id="eco" name="eco" value="1">
-                <i class="fas fa-money-bill-wave fa-lg"></i>
-                <label for="eco">Économique</label> 
+                <input
+                  type="checkbox"
+                  id="eco"
+                  name="eco"
+                  value="1"
+                  class="filters_input"
+                />
+                <label for="eco" class="filters_label">
+                  <span><i class="fas fa-money-bill-wave fa-lg"></i></span>
+                  <span> Économique</span></label
+                >
               </li>
+              <!-- Filter family -->
               <li>
-                <input type="checkbox" id="fam" name="fam" value="1">
-                <i class="fas fa-child fa-lg"></i>
-                <label for="fam">Familial</label> 
+                <input
+                  type="checkbox"
+                  id="fam"
+                  name="fam"
+                  value="1"
+                  class="filters_input"
+                />
+                <label for="fam" class="filters_label">
+                  <span><i class="fas fa-child fa-lg"></i></span>
+                  <span> Familial</span></label
+                >
               </li>
+              <!-- Filter romantic -->
               <li>
-                <input type="checkbox" id="rom" name="rom" value="1">
-                <i class="fas fa-heart fa-lg"></i>
-                <label for="rom">Romantique</label> 
+                <input
+                  type="checkbox"
+                  id="rom"
+                  name="rom"
+                  value="1"
+                  class="filters_input"
+                />
+                <label for="rom" class="filters_label">
+                  <span><i class="fas fa-heart fa-lg"></i></span>
+                  <span> Romantique</span></label
+                >
               </li>
+              <!-- Filter pets allowed -->
               <li>
-                <input type="checkbox" id="pet_a" name="pets_a" value="1">
-                <i class="fas fa-dog fa-lg"></i>
-                <label for="pet_a">Animaux autorisés</label> 
+                <input
+                  type="checkbox"
+                  id="pet_a"
+                  name="pets_a"
+                  value="1"
+                  class="filters_input"
+                />
+                <label for="pet_a" class="filters_label">
+                  <span><i class="fas fa-dog fa-lg"></i></span>
+                  <span> Animaux autorisés</span></label
+                >
               </li>
             </ul>
           </div>
         </form>
-        <div class="search-result">
+        <div class="search_result">
           <div class="fas fa-info"></div>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
@@ -102,17 +153,17 @@
         <!-- lodging part -->
         <div class="lodging grey-bg" id="lodging">
           <h2>Hébergements à Marseille</h2>
-          <ul class="lodging-flexbox">
+          <ul class="lodging_flexbox">
             <li class="lodging_card">
               <a href="#">
                 <div>
-                  <div class="lodging-img">
+                  <div class="lodging_img">
                     <img
                       src="assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                       alt="Photo Auberge la Cannebière"
                     />
                   </div>
-                  <div class="lod-desc">
+                  <div class="lodging_desc">
                     <h3>Auberge la Cannebière</h3>
                     <p>Nuit à partir de <strong>25€</strong></p>
                     <div class="note">
@@ -128,13 +179,13 @@
             <li class="lodging_card">
               <a href="#">
                 <div>
-                  <div class="lodging-img">
+                  <div class="lodging_img">
                     <img
                       src="assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                       alt="Photo Hôtel du port"
                     />
                   </div>
-                  <div class="lod-desc">
+                  <div class="lodging_desc">
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de <strong>52€</strong></p>
                     <div class="note">
@@ -150,13 +201,13 @@
             <li class="lodging_card">
               <a href="#">
                 <div>
-                  <div class="lodging-img">
+                  <div class="lodging_img">
                     <img
                       src="assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                       alt="Photo Hôtel les mouettes"
                     />
                   </div>
-                  <div class="lod-desc">
+                  <div class="lodging_desc">
                     <h3>Hôtel Les mouettes</h3>
                     <p>Nuit à partir de <strong>76€</strong></p>
                     <div class="note">
@@ -172,13 +223,13 @@
             <li class="lodging_card">
               <a href="#">
                 <div>
-                  <div class="lodging-img">
+                  <div class="lodging_img">
                     <img
                       src="assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                       alt="Photo Hôtel de la mer"
                     />
                   </div>
-                  <div class="lod-desc">
+                  <div class="lodging_desc">
                     <h3>Hôtel de la mer</h3>
                     <p>Nuit à partir de <strong>46€</strong></p>
                     <div class="note">
@@ -195,13 +246,13 @@
             <li class="lodging_card">
               <a href="#">
                 <div>
-                  <div class="lodging-img">
+                  <div class="lodging_img">
                     <img
                       src="assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                       alt="Photo Auberge Le Panier"
                     />
                   </div>
-                  <div class="lod-desc">
+                  <div class="lodging_desc">
                     <h3>Auberge Le Panier</h3>
                     <p>Nuit à partir de <strong>23€</strong></p>
                     <div class="note">
@@ -217,13 +268,13 @@
             <li class="lodging_card">
               <a href="#">
                 <div>
-                  <div class="lodging-img">
+                  <div class="lodging_img">
                     <img
                       src="assets/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                       alt="Photo Hôtel chez Amina"
                     />
                   </div>
-                  <div class="lod-desc">
+                  <div class="lodging_desc">
                     <h3>Hôtel chez Amina</h3>
                     <p>Nuit à partir de <strong>96€</strong></p>
                     <div class="note">
@@ -241,18 +292,18 @@
 
         <!-- popular part -->
         <div class="popular grey-bg">
-          <div class="pop-title">
+          <div class="popular_title">
             <h2>Les plus populaires</h2>
             <i class="fas fa-chart-line fa-2x"></i>
           </div>
-          <ul class="popular-flexbox">
+          <ul class="popular_flexbox">
             <li class="popular_card">
               <a href="#">
                 <img
                   src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                   alt="Photo Hôtel Le soleil du matin"
                 />
-                <div class="pop-desc">
+                <div class="popular_desc">
                   <h3>Hôtel Le soleil du matin</h3>
                   <p>Nuit à partir de <strong>128€</strong></p>
                   <div class="note">
@@ -270,7 +321,7 @@
                   src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                   alt="Photo Au cœur de l'eau Chambres d'hôtes"
                 />
-                <div class="pop-desc">
+                <div class="popular_desc">
                   <h3>Au cœur de l'eau Chambres d'hôtes</h3>
                   <p>Nuit à partir de <strong>71€</strong></p>
                   <div class="note">
@@ -288,7 +339,7 @@
                   src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                   alt="Photo Hôtel Tout bleu et Blanc"
                 />
-                <div class="pop-desc">
+                <div class="popular_desc">
                   <h3>Hôtel Tout bleu et Blanc</h3>
                   <p>Nuit à partir de <strong>68€</strong></p>
                   <div class="note">
@@ -306,8 +357,8 @@
       <!-- section activities -->
       <aside id="activities">
         <h2>Activités à Marseille</h2>
-        <div class="activities-grid">
-          <ul class="activities-subgrid">
+        <div class="activities_grid">
+          <ul class="activities_subgrid">
             <li class="activities_card grid-bg">
               <a href="#">
                 <img
@@ -339,7 +390,7 @@
             </li>
           </ul>
 
-          <ul class="activities-subgrid">
+          <ul class="activities_subgrid">
             <li class="activities_card grid-bg">
               <a href="#">
                 <img
@@ -374,23 +425,23 @@
       </aside>
     </main>
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer>
-      <ul class="about">
+      <ul class="about footer_list">
         <li><h3>A propos</h3></li>
-        <li><a href="#">Fonctionnement du site</a></li>
-        <li><a href="#">Conditions générales de vente</a></li>
-        <li><a href="#">Données et confidentialité</a></li>
+        <li><a href="#" class="footer_link">Fonctionnement du site</a></li>
+        <li><a href="#" class="footer_link">Conditions générales de vente</a></li>
+        <li><a href="#" class="footer_link">Données et confidentialité</a></li>
       </ul>
-      <ul class="our_lodgings">
+      <ul class="our_lodgings footer_list">
         <li><h3>Nos hébergements</h3></li>
-        <li><a href="#">Charte qualité</a></li>
-        <li><a href="#">Soumettre votre hôtel</a></li>
+        <li><a href="#" class="footer_link">Charte qualité</a></li>
+        <li><a href="#" class="footer_link">Soumettre votre hôtel</a></li>
       </ul>
-      <ul class="assistance">
+      <ul class="assistance footer_list">
         <li><h3>Assistance</h3></li>
-        <li><a href="#">Centre d'aide</a></li>
-        <li><a href="#">Nous contacter</a></li>
+        <li><a href="#" class="footer_link">Centre d'aide</a></li>
+        <li><a href="#" class="footer_link">Nous contacter</a></li>
       </ul>
     </footer>
   </body>
