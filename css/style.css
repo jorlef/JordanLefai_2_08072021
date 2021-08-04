@@ -395,7 +395,7 @@ header {
   color: #dbdada;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1220px) {
   #lod-pop {
     flex-direction: column-reverse;
     margin: 0 0;
@@ -430,7 +430,7 @@ header {
   background-color: white;
   border-radius: 20px;
   box-shadow: 2px 2px 10px rgb(151, 151, 151);
-  flex-basis: 30%;
+  flex-basis: 31%;
   flex-grow: 1;
 }
 
@@ -475,6 +475,21 @@ header {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1220px) {
+  .lodging {
+    margin: 20px 4%;
+    padding: 0 20px;
+  }
+
+  .show_more {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .lodging {
     margin: 0 10px;
@@ -497,14 +512,6 @@ header {
 
   .lodging_card {
     max-width: unset;
-  }
-
-  .show_more {
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
   }
 }
 
@@ -567,17 +574,44 @@ header {
   box-shadow: 5px 5px 5px 5px rgb(114, 114, 114);
 }
 
+@media screen and (max-width: 1220px) {
+  .popular {
+    margin: 0 4%;
+  }
+
+  .popular_flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .popular_card {
+    margin-bottom: 0;
+    flex-basis: 30%;
+    flex-grow: 0.5;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .popular {
     border-radius: unset;
+    margin: 0;
   }
 
   .popular > * {
     margin: 15px 20px;
   }
 
+  .popular_flexbox {
+    flex-direction: column;
+  }
+
   .popular_card {
     margin-bottom: 15px;
+    margin: 0 0 0 0;
   }
 }
 
