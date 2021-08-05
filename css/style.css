@@ -497,9 +497,9 @@ header {
 
 @media screen and (max-width: 820px) {
   .lodging {
-    margin: 0 10px;
+    margin: 0;
+    padding: 0;
     background-color: white;
-    padding: 0 20px;
   }
 
   .lodging > h2 {
