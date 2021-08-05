@@ -483,11 +483,14 @@ header {
     padding: 0 20px;
   }
 
+  .lodging > * {
+    margin: 0 15px;
+  }
+
   .show_more {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
     text-align: center;
   }
 }
